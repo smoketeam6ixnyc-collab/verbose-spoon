@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gunniverse Code</title>
+    <link rel="stylesheet" href="./src/styles.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <section class="hero" aria-labelledby="page-title">
+        <p class="eyebrow">Signal acquired</p>
+        <h1 id="page-title">Gunniverse Code</h1>
+        <p class="lede">
+          Plot cosmic dispatches, tune the pulse engine, and explore a compact
+          star map generated in plain JavaScript.
+        </p>
+      </section>
+
+      <section class="control-panel" aria-label="Gunniverse controls">
+        <label for="sector-count">Sectors</label>
+        <input id="sector-count" type="range" min="3" max="9" value="6" />
+        <output id="sector-output" for="sector-count">6</output>
+        <button id="reroll" type="button">Re-chart map</button>
+      </section>
+
+      <section class="map-card" aria-label="Generated star map">
+        <canvas id="star-map" width="900" height="520">
+          Your browser does not support canvas.
+        </canvas>
+      </section>
+
+      <section class="dispatches" aria-labelledby="dispatch-title">
+        <h2 id="dispatch-title">Latest dispatches</h2>
+        <ul id="dispatch-list"></ul>
+      </section>
+    </main>
+
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>

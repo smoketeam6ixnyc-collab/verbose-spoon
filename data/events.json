@@ -1,0 +1,32 @@
+[
+  {
+    "id": "dispatch-sector-1",
+    "sector": "Amber Gate",
+    "message": "Amber Gate reports a 40% pulse through orbit 70."
+  },
+  {
+    "id": "dispatch-sector-2",
+    "sector": "Binary Spire",
+    "message": "Binary Spire reports a 57% pulse through orbit 98."
+  },
+  {
+    "id": "dispatch-sector-3",
+    "sector": "Crimson Drift",
+    "message": "Crimson Drift reports a 74% pulse through orbit 126."
+  },
+  {
+    "id": "dispatch-sector-4",
+    "sector": "Echo Pulse",
+    "message": "Echo Pulse reports a 91% pulse through orbit 154."
+  },
+  {
+    "id": "dispatch-sector-5",
+    "sector": "Neon Forge",
+    "message": "Neon Forge reports a 48% pulse through orbit 182."
+  },
+  {
+    "id": "dispatch-sector-6",
+    "sector": "Velvet Harbor",
+    "message": "Velvet Harbor reports a 65% pulse through orbit 210."
+  }
+]
