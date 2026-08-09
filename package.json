@@ -1,0 +1,13 @@
+{
+  "name": "gunniverse-code",
+  "version": "1.0.0",
+  "description": "A tiny interactive Gunniverse star map built with plain HTML, CSS, and JavaScript.",
+  "type": "module",
+  "scripts": {
+    "start": "vite --host 0.0.0.0",
+    "test": "node --test"
+  },
+  "devDependencies": {
+    "vite": "^7.0.0"
+  }
+}
