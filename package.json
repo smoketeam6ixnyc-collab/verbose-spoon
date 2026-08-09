@@ -4,10 +4,10 @@
   "description": "A tiny interactive Gunniverse star map built with plain HTML, CSS, and JavaScript.",
   "type": "module",
   "scripts": {
-    "start": "vite --host 0.0.0.0",
-    "test": "node --test"
-  },
-  "devDependencies": {
-    "vite": "^7.0.0"
+    "start": "node scripts/server.js",
+    "test": "node --test",
+    "health": "node scripts/health.js",
+    "permit:scout": "node scripts/permit-scout.js",
+    "events": "node scripts/events.js"
   }
 }
