@@ -1,0 +1,3 @@
+export type RiskInput={requestsPerMinute:number;replayedToken:boolean;identicalPattern:boolean;checkoutSeconds:number;automationSignal:boolean;coordinatedBehavior:boolean}
+export type Decision='PASS'|'VERIFY'|'QUEUE'|'BLOCK'
+export function scoreRisk(i:RiskInput){let score=0;if(i.requestsPerMinute>60)score+=10;if(i.replayedToken)score+=15;if(i.identicalPattern)score+=15;if(i.checkoutSeconds<2)score+=20;if(i.automationSignal)score+=20;if(i.coordinatedBehavior)score+=20;score=Math.min(100,score);const decision:Decision=score>=80?'BLOCK':score>=60?'QUEUE':score>=30?'VERIFY':'PASS';return {score,decision}}
